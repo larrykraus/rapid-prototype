@@ -1,1 +1,1 @@
-console.log("It's working!");
+angular.module('listApp', ['ngResource']);

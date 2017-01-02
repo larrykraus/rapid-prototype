@@ -2,10 +2,24 @@
 <html>
 <head>
 	<title>TO DO LIST</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.10/angular.min.js"></script>
 	<script src="js/app.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-	<h1>It's workin'</h1>
+<body ng-app="List">	
+	<div>
+		<h1>TO DO LIST</h1>
+		<ul>
+			<li>Learn to program again</li>
+			<li>Laundry</li>
+			<li>Groceries</li>
+			<li>Finish book</li>	
+			<li>Oil change</li>	
+		</ul>
+		<form ng-submit="list.addItem()">
+			<input type="textbox" name="add item" placeholder="Add item...">
+		</form>
+	</div>
 </body>
 </html>
